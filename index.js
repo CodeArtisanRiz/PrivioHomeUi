@@ -1,3 +1,8 @@
+function get_action(){
+    form_action = queryurl[0];
+    return form_action;
+}
+
 function setCookie(name, value, exp_days) {
     var d = new Date();
     d.setTime(d.getTime() + (exp_days*24*60*60*1000));
@@ -78,7 +83,7 @@ function getSearchEngine()
 const searchBox = document.getElementById('searchbar')
 
 searchBox.addEventListener('keydown', (e) => {
-    if (e.code == 'Enter')
+    if (e.key === 'Enter' || e.keyCode === 13 || e.which === 13)
     {
         let textfield = document.getElementById('searchbar').value;
         if(textfield)
@@ -96,6 +101,11 @@ searchBox.addEventListener('keydown', (e) => {
      
   }
 })
+function getSearchEn() {
+    // Return the URL of your preferred search engine
+    // alert('height')
+    window.location.href =  'https://www.google.com/search?q='+document.getElementById('searchbar').value;
+}
 
 function choose(val)
 {

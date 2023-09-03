@@ -9,7 +9,11 @@ html {
 }
 
 body {
-	background-image: radial-gradient(#e2e2e6, #eaeaec, #e2e2e6);
+	/* background-image: radial-gradient(#e2e2e6, #eaeaec, #e2e2e6); */
+	color: #fff;
+            font-family: 'New Tegomin', sans-serif;
+            font-size: 20px;
+            background-size: cover;
 }
 
 footer {
@@ -227,7 +231,7 @@ select, option {
 #settings_applied {
 	margin-top: 10px;
 	font-size: 11pt;
-	color: #49494e;
+	/* color: #49494e; */
 }
 
 noscript {
@@ -317,7 +321,7 @@ noscript {
 	}
 
 	.menuline {
-		background-color: #80808b;
+		background-color: #000000;
 	}
 
 	#settings:hover .menuline, #settings_open:hover div {
@@ -325,7 +329,7 @@ noscript {
 	}
 
 	body {
-		background-image: radial-gradient(#242426, #24242c, #242426);
+		/* background-image: radial-gradient(#242426, #24242c, #242426); */
 	}
 
 	hr, #hrfocus {
@@ -354,11 +358,25 @@ noscript {
 	}
 	
 	.icons a img {
-		filter: invert(calc(140/255));
+		/* filter: invert(calc(140/255)); */
 	}
 
 	.icons a img:hover {
 		filter: invert(calc(210/255));
 	}
+	#logo {
+		text-align: center;
+		font-weight: bold;
+		margin-block-end: unset;
+		/* text-shadow: 2px 2px rgb(60, 80, 94); */
+		cursor: default;
+	}
 
+	.timing {
+		/* font-size: 3.2rem; */
+		text-align: center;
+		margin-block-start: unset;
+		text-shadow: 2px 2px rgb(55, 62, 51);
+		cursor: default;
+	}
 }
