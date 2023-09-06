@@ -144,10 +144,22 @@
             document.getElementById('time-greeting').textContent = 'Good '+greeting;
 			var timeVal='';
 			if(h<12){
+				if(h < 10){
+					h = "0"+h;
+				}
+				if(m < 10){
+					m = "0"+m;
+				}
 				timeVal = h + ":" + m+" AM";
 			}
 			else {
 				h = h-12;
+				if(h < 10){
+					h = "0"+h;
+				}
+				if(m < 10){
+					m = "0"+m;
+				}
 				timeVal = h + ":" + m+" PM";
 			}
             document.getElementById('time').textContent = timeVal;
